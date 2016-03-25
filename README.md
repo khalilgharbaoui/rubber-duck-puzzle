@@ -8,5 +8,9 @@
 Drag and drop the pieces of the puzzle to complete the rubber duck.
 
 ###demo:
-[Rubber Duck Puzzle demo](http://rubber-duck-puzzle.bitballoon.com)
+[Rubber Duck Puzzle demo](http://rubber-duck-puzzle.bitballoon.com)\
+
+###TODO:
+
+- constrain the pieces inside the container.
 
