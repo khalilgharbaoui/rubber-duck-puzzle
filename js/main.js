@@ -12,7 +12,6 @@ $(document).ready(function(){
 
       resize: false,
       fitWidth: true,
-      fitHeight: true,
       layoutMode: 'masonryHorizontal'
 
     });
