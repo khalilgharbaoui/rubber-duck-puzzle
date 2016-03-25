@@ -98,8 +98,8 @@ html, body {
     margin: 0;
 }
 .duckpuzzle {
-    width: 320px;
-    height: 320px;
+    width: 321px;
+    height: 321px;
     max-width: 321px;
     max-height: 321px;
     margin: 50px auto 0 auto;
@@ -114,8 +114,8 @@ html, body {
 }
 .gutter-sizer{width:0%;}
 .duckpiece {
-    width: 33.33%;
-    height: 33.33%;
+    width: 107px;
+    height: 107px;
     float: left;
 }
 .duckpiece.is-dragging, .duckpiece.is-positioning-post-drag {

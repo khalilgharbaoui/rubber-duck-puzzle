@@ -9,7 +9,11 @@ $(document).ready(function(){
       rowHeight: '.duckpiece',
        gutter: '.gutter-sizer',
 
-      layoutMode: 'masonry',
+
+      resize: false,
+      fitWidth: true,
+      fitHeight: true,
+      layoutMode: 'masonryHorizontal'
 
     });
 
