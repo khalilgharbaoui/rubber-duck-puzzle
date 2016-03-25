@@ -1,4 +1,4 @@
-# rubber-duck-puzzle
+# Rubber Duck Puzzle
 
 ##Rubber Duck Puzzle is an experiment infusing 3 JavaScript libraries: "Packery", "Draggabilly" and "jQuery".
 
