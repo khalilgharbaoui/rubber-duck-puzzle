@@ -13,8 +13,7 @@ $(document).ready(function(){
       resize: false,
       fitWidth: true,
       layoutMode: 'masonryHorizontal'
-
-    });
+});
 
 
 $grid.find('.duckpiece').each(function(i, duckpiece)
@@ -35,3 +34,4 @@ $grid.find('.duckpiece').each(function(i, duckpiece)
     while (divs.length) {
         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }
+    
