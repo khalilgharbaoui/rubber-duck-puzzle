@@ -5,4 +5,8 @@
 
 ###info:
 
-Drag and drop the pieces of the puzzle to compleet the rubber duck.
+Drag and drop the pieces of the puzzle to complete the rubber duck.
+
+###demo:
+
+rubber-duck-puzzle.bitballoon.com
