@@ -1,10 +1,12 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -29,7 +31,6 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -54,12 +55,7 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
 
@@ -96,40 +92,79 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.duckpuzzle {
+    width: 320px;
+    height: 320px;
+    max-width: 321px;
+    max-height: 321px;
+    margin: 50px auto 0 auto;
+    background-color: #ccc;
+    border: 20px solid black;
+    border-radius: 10px;
+}
+.duckpuzzle:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.gutter-sizer{width:0%;}
+.duckpiece {
+    width: 33.33%;
+    height: 33.33%;
+    float: left;
+}
+.duckpiece.is-dragging, .duckpiece.is-positioning-post-drag {
+    box-shadow: 0 0 8px;
+    z-index: 10;
+    /* keep dragged item on top */
 
-
-
-
-
-
-   html, body { height: 100%; padding: 0; margin: 0; }
-
-   .duckpuzzle{width: 320px; height: 320px; margin: 50px auto 0 auto; }
-
-
-.duckpiece{ max-width: 33.33%; max-height: 33.33%; width: 33.33%; height: 33.33%; float: left;}
-
-#div1 { background: url('../img/rubber-ducky.png') no-repeat 0% 0%;}
-#div2 { background: url('../img/rubber-ducky.png') no-repeat 50% 0%; }
-#div3 { background: url('../img/rubber-ducky.png') no-repeat 100% 0%; }
-#div4 { background: url('../img/rubber-ducky.png') no-repeat 0% 50%; }
-#div5 { background: url('../img/rubber-ducky.png') no-repeat 50% 50%;}
-#div6 { background: url('../img/rubber-ducky.png') no-repeat 100% 50%; }
-#div7 { background: url('../img/rubber-ducky.png') no-repeat 0% 100%; }
-#div8 { background: url('../img/rubber-ducky.png') no-repeat 50% 100%; }
-#div9 { background: url('../img/rubber-ducky.png') no-repeat 100% 100%;}
-
-
-
-
-
-
-
-
+}
+.duckpiece:hover {
+    cursor: move;
+}
+.packery-drop-placeholder {
+    outline: 4px dashed hsla(34, 100%, 50%, 1);
+    outline-offset: -4px;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+}
+#div1 {
+    background: url('../img/rubber-ducky.png') no-repeat 0% 0%;
+}
+#div2 {
+    background: url('../img/rubber-ducky.png') no-repeat 50% 0%;
+}
+#div3 {
+    background: url('../img/rubber-ducky.png') no-repeat 100% 0%;
+}
+#div4 {
+    background: url('../img/rubber-ducky.png') no-repeat 0% 50%;
+}
+#div5 {
+    background: url('../img/rubber-ducky.png') no-repeat 50% 50%;
+}
+#div6 {
+    background: url('../img/rubber-ducky.png') no-repeat 100% 50%;
+}
+#div7 {
+    background: url('../img/rubber-ducky.png') no-repeat 0% 100%;
+}
+#div8 {
+    background: url('../img/rubber-ducky.png') no-repeat 50% 100%;
+}
+#div9 {
+    background: url('../img/rubber-ducky.png') no-repeat 100% 100%;
+}
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
@@ -161,8 +196,7 @@ textarea {
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -191,12 +225,12 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
-
 .clearfix:after {
     clear: both;
 }
@@ -210,11 +244,7 @@ textarea {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -225,74 +255,52 @@ textarea {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
+    *, *:before, *:after, *:first-letter, *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
-    a,
-    a:visited {
+    a, a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
+    a[href^="#"]:after, a[href^="javascript:"]:after {
         content: "";
     }
-
-    pre,
-    blockquote {
+    pre, blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
-    tr,
-    img {
+    tr, img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
-    p,
-    h2,
-    h3 {
+    p, h2, h3 {
         orphans: 3;
         widows: 3;
     }
-
-    h2,
-    h3 {
+    h2, h3 {
         page-break-after: avoid;
     }
 }
