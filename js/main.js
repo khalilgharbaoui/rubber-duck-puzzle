@@ -8,11 +8,11 @@ $(document).ready(function(){
       columnWidth: '.duckpiece',
       rowHeight: '.duckpiece',
        gutter: '.gutter-sizer',
-
-
-      resize: false,
+       isHorizontal: true,
+        resizeContainer: true,
+      animate:true,
       fitWidth: true,
-      layoutMode: 'masonryHorizontal'
+      layoutMode: 'packery'
 });
 
 
@@ -34,4 +34,3 @@ $grid.find('.duckpiece').each(function(i, duckpiece)
     while (divs.length) {
         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }
-    
